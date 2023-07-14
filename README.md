@@ -41,14 +41,14 @@ module "vapp_networks" {
   vdc_org_name                  = "<US1-VDC-ORG-NAME>"
   
   vapp_networks = {
-    "network1" = {
+    "US1-Segment-01" = {
       vapp_name                 = "Production Application 01"
       org_network_name          = "US1-Segment-01"
       is_fenced                 = true
       retain_ip_mac_enabled     = false
       reboot_vapp_on_removal    = true
     },
-    "network2" = {
+    "US1-Segment-02" = {
       vapp_name                 = "Production Application 02"
       org_network_name          = "US1-Segment-02"
       is_fenced                 = false
