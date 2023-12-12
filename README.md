@@ -39,6 +39,7 @@ module "vapp_networks" {
   source                        = "github.com/global-vmware/vcd_vapp_org_network.git?ref=v1.0.1"
 
   vdc_org_name                  = "<US1-VDC-ORG-NAME>"
+  vdc_name                      = "<US1-VDC-NAME>"
   
   vapp_networks = {
     "US1-Segment-01" = {
