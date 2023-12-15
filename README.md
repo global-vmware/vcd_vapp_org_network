@@ -46,16 +46,16 @@ module "vapp_networks" {
     "US1-Segment-01" = {
       vapp_name                 = "Production Application 01"
       org_network_name          = "US1-Segment-01"
-      is_fenced                 = true
+      is_fenced                 = false
       retain_ip_mac_enabled     = false
       reboot_vapp_on_removal    = true
     },
     "US1-Segment-02" = {
-      vapp_name                 = "Production Application 02"
+      vapp_name                 = "Production Application 01"
       org_network_name          = "US1-Segment-02"
       is_fenced                 = false
-      retain_ip_mac_enabled     = true
-      reboot_vapp_on_removal    = false
+      retain_ip_mac_enabled     = false
+      reboot_vapp_on_removal    = true
     }
   }
 }
