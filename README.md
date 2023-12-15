@@ -20,6 +20,7 @@ This Terraform module will attach an existing Org VDC Network to a Virtual Appli
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|----------|
 | vdc_org_name | The name of the Data Center Group Organization in VCD | string | Organization Name Format: `"Organization Name Format: <Account_Number>-<Region>-<Account_Name>"` | yes |
+| vdc_name | The name of the Virtual Data Center Group in VCD | string | VDC Name Format: `"Virtual Data Center Name Format: <Account_Number>-<Region>-<VDC_Name>"` | yes |
 | vapp_networks | List of vApp Organization Networks to be created | map(object) | - | yes |
 
 ### Outputs
